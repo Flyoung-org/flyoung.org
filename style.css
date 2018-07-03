@@ -1,15 +1,36 @@
 body {margin:0;}
 
-#content{
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  font-family: "Hoefler Text", "Songti TC", serif, 微軟正黑體, Verdana, Helvetica, sans-serif, "STHeiti Light", "Microsoft Yahei", "Microsoft JhengHei", 新細明體;
+.image-container {
+  padding: 0;
 }
-h1{
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 2em;
+}
+
+.text {
+  text-align: left;
+}
+
+.content{
+  font-weight: 100;
+  font-size: 1em;
+}
+
+span {
   text-align: center;
-  padding: 50px;
-  margin-bottom: 10;
+  border: dashed;
+}
+
+h1{
+  width: inherit;
+  font-weight: 400;
 }
 .container {
     margin-top: 20px;
