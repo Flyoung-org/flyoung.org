@@ -1,5 +1,7 @@
 body {margin:0;}
-
+.row {
+  width: 100%;
+}
 .image-container {
   padding: 0;
 }
@@ -9,13 +11,17 @@ body {margin:0;}
   flex-direction: column;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-  font-size: 2em;
+  font-size: 1em;
   font-family: 'Roboto', sans-serif;
-  padding-left: 2em;
 }
+
+.left {padding-right: 2em;}
+.right {padding-left: 2em;}
 
 .text {
   text-align: left;
+  margin-bottom: .5em;
+  width: inherit;
 }
 
 .content{
@@ -23,15 +29,15 @@ body {margin:0;}
   font-size: 1em;
 }
 
-span {
-  text-align: center;
-  border: dashed;
-}
-
-h1{
-  width: inherit;
+h1 {
   font-weight: 400;
 }
+
+.link {
+  font-size: .4em;
+  font-weight: 500;
+}
+
 .container {
     margin-top: 20px;
 }
