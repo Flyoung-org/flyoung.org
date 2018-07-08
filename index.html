@@ -4,53 +4,31 @@
     <meta charset="utf-8">
     <title>Flyoung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
   </head>
   <body>
-    <!--      create navigtion bar  sticky-top?    -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #D33D29;">
-      <a class="navbar-brand" href="#"> <img src="img/logo.jpg" alt="" height='30'> </a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item active">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-
-
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Where We Work
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Cambodia</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Swatini</a>
+    <header>
+      <h1>FLYOUNG</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <nav>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li class="dropdown">
+            <a class="dropbtn">Where We Work</a>
+            <div class="dropdown-content">
+              <a href="#">Cambodia</a>
+              <a href="#">Swatini</a>
             </div>
           </li>
-
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Support Us
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Donate</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Cooperate Partnership</a>
-            </div>
-          </li>
-
-
+          <li><a href="support_us.html">Support Us</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
 
+    </header>
+    <!--      create navigtion bar  sticky-top?    -->
     <!--  create carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -93,6 +71,10 @@
       </a>
     </div>
 
+    <!--  create first block -->
+    <section>
+
+    </section>
     <!--  create first block -->
     <div class="container-fluid" style="background: #ede7de; padding: 5em; align-items: center; justify-content: space-around; display: flex;">
       <div class="row">
