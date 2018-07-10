@@ -158,24 +158,24 @@ nav {
   padding: 80px 32px;
 }
 
-block {
-  width: 100vw;
+.block {
+  width: 100%;
 }
 
-%image {
-  width: 100vw;
-}
-
-image-left {
-  @extend %image;
+.image-left {
+  @extend .block;
 
 }
 
-image-right {
-  @extend %image;
+.image-right {
+  @extend .block;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+
 }
