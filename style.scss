@@ -22,6 +22,11 @@ h2 {
   text-decoration: none;
 }
 
+.text-bright {
+  @extend .text;
+  color: white;
+}
+
 /*navigtion bar*/
 $flyoung_red: rgba(255, 86, 86, .95);
 
@@ -134,6 +139,8 @@ nav {
     transform: scale(1, 1);
     a {opacity: 1;}
     .container {
+      align-items: stretch;
+      border-bottom: 1px solid rgb(209, 209, 209);
       h1 {
         margin: 0;
         padding: 1rem;
