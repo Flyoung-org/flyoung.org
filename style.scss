@@ -47,6 +47,11 @@ nav {
     opacity: 0;
     transition: opacity 120ms ease-in-out;
   }
+
+  .container {
+      margin: 0;
+      padding: 0;
+  }
 }
 
 /* nav-toggle */
@@ -148,8 +153,29 @@ nav {
 
 /* container-------------------*/
 .container {
-  width: 100vw;
   max-width: 1440px;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin: 0 auto;
+  padding: 80px 32px;
+}
+
+block {
+  width: 100vw;
+}
+
+%image {
+  width: 100vw;
+}
+
+image-left {
+  @extend %image;
+
+}
+
+image-right {
+  @extend %image;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
