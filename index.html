@@ -5,21 +5,23 @@
     <title>Flyoung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
-      <h1 id="logo">FLYOUNG</h1>
+      <h1 id="logo"><a href="index.html"><img src="svg/logo.svg" alt="FLYOUNG"></a></h1>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
       <nav>
         <div class="container">
-          <h1 id="logo">FLYOUNG</h1>
+          <h1 id="logo"><a href="index.html"><img src="svg/logo.svg" alt="FLYOUNG"></a></h1>
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="Cambodia.html">Cambodia</a></li>
-            <li><a href="Swatini.html">Swatini</a></li>
+            <li><a href="cambodia.html">Cambodia</a></li>
+            <li><a href="swatini.html">Swatini</a></li>
 
             <!--
             <li class="dropdown">
@@ -31,6 +33,7 @@
             </li>
             -->
             <li><a href="support_us.html">Support Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -79,13 +82,20 @@
       </a>
     </div>
   -->
-    <!--  create first block -->
-    <section>
+    <div class="parallax">
+      <div class="container text-bright h-full flex">
+          <div class="xl">
+            WOW<br>
+            <img src="svg/logo_white.svg" alt="FLYOUNG"><br>
+            has a<br>
+            <span>website!!!</span>
+          </div>
+      </div>
+    </div>
 
-    </section>
     <!--  create first block -->
     <div class="container">
-      <div class="image-left">
+      <div class="block image-left">
         <img src="img/cambodia/toilet.jpg">
       </div>
       <div class="block">
@@ -101,7 +111,7 @@
 
     <!--  create second block -->
     <div class="container">
-      <div class="image-right">
+      <div class="block image-right">
         <img src="img/index/man.jpg" class="rounded float-left" alt="..." style="max-width:100%; height:auto;">
       </div>
       <div class="block">
@@ -114,23 +124,52 @@
     </div>
 
     <!--  create Third block -->
-    <div class="parallax">
-      <div class="container">
-        <div class="text-bright">hello</div>
-      </div>
-    </div>
 
     <!--footer-------------------->
     <footer>
       <div class="container">
         <div class="block">
-          1st block of the footer
+          <h1 id="logo">
+            <img src="svg/logo.svg" alt="FLYOUNG">
+          </h1>
+          <p class="privacy_terms"><a href="privacy_terms.html">Privacy & Terms</a></p>
         </div>
+
         <div class="block">
-          2nd block of the footer
+          <h3>Address</h3>
+          <h4>250 Wuxing St. Taipei 11031, TW</h4>
+          <h3>Phone</h3>
+          <h4>(02)27361661 #8616</h4>
         </div>
+
+        <div class="block">
+          <h3>Find us on</h3>
+          <h4>
+            <a href="https://www.facebook.com/TMU.FLYoung/" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube-play"></a>
+          </h4>
+        </div>
+
+      </div>
+      <div class="copyright">
+        Copyright &#169; 2018 Flyoung All rights reserved.
       </div>
     </footer>
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function() {
 
+
+          if($(this).scrollTop() < $(window).height()) {
+            $("nav").css("background-color", "rgba(100,100,100,0)");
+          } else {
+            $("nav").css("background-color", "white");
+          }
+        });
+      });
+    </script>
+  -->
   </body>
 </html>
