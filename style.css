@@ -68,8 +68,8 @@ a:hover {
 .copyright {
   text-align: center;
   color: gray;
-  padding: 0;
-  margin: 1em auto; }
+  margin: 0;
+  padding: 0 0 3em; }
 
 /*font font-awesome-4.7 icon */
 .fa {
@@ -171,8 +171,7 @@ nav {
   nav {
     transform: scale(1, 1); }
     nav .container {
-      align-items: stretch;
-      border-bottom: 1px solid #d1d1d1; }
+      align-items: stretch; }
       nav .container h1 {
         margin: 0;
         padding: 1rem; }
@@ -242,3 +241,6 @@ img {
   background-position: right;
   background-attachment: fixed;
   background-size: cover; }
+
+.boxshadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
