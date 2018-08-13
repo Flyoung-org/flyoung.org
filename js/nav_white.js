@@ -1,6 +1,12 @@
-window.onscroll = nav_white;
-function nav_white() {
-  if (document.body.scrollTop > window.screen.height) {
-    document.querySelector(nav).className = ".nav_white";
-  }
-}
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 0) {
+	    $("nav").addClass("nav_white", 500);
+	  }
+
+	  else{
+		  $("nav").removeClass("nav_white", 500);
+	  }
+  })
+})
