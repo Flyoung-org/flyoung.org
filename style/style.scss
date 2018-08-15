@@ -74,8 +74,11 @@ a:hover {opacity: 0.7;}
 }
 
 #logo {
+  margin: 0.5rem 0;
+  padding-left: 0;
+
   img {
-    height: 2rem;
+    height: 26px;
   }
 }
 
@@ -145,7 +148,7 @@ nav {
     a {
       color: gray;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 16px;
       opacity: 0;
       transition: opacity 120ms ease-in-out;
     }
@@ -153,7 +156,8 @@ nav {
 
   .container {
       margin: 0 auto;
-      padding: 0;
+      padding-top: 0;
+      padding-bottom: 0;
   }
 }
 
@@ -224,7 +228,7 @@ nav {
       align-items: stretch;
       h1 {
         margin: 0;
-        padding: 1rem;
+        padding: 0.5rem;
       }
       ul {
         display: flex;

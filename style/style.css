@@ -58,8 +58,11 @@ a:hover {
 .text-bright {
   color: white; }
 
-#logo img {
-  height: 2rem; }
+#logo {
+  margin: 0.5rem 0;
+  padding-left: 0; }
+  #logo img {
+    height: 26px; }
 
 .privacy_terms a {
   text-decoration: none;
@@ -116,12 +119,13 @@ nav {
     nav li a {
       color: gray;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 16px;
       opacity: 0;
       transition: opacity 120ms ease-in-out; }
   nav .container {
     margin: 0 auto;
-    padding: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
 
 /* nav-toggle */
 .nav-toggle {
@@ -177,7 +181,7 @@ nav {
       align-items: stretch; }
       nav .container h1 {
         margin: 0;
-        padding: 1rem; }
+        padding: 0.5rem; }
       nav .container ul {
         display: flex;
         text-decoration: none; }
