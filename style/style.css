@@ -127,6 +127,24 @@ nav {
     padding-top: 0;
     padding-bottom: 0; }
 
+@media only screen and (max-width: 768px) {
+  nav .container {
+    padding: 0; }
+    nav .container li {
+      margin: 0;
+      border-bottom: 1px solid #eee; }
+      nav .container li a {
+        display: block;
+        padding: 16px 32px; } }
+
+.nav_white {
+  background-color: white;
+  transition: all 0.5s ease; }
+  .nav_white li a {
+    color: #515151 !important; }
+  .nav_white li a:hover {
+    color: black !important; }
+
 /* nav-toggle */
 .nav-toggle {
   display: none; }
@@ -150,7 +168,7 @@ nav {
   display: block;
   background: #d00000;
   height: 2px;
-  width: 2em;
+  width: 1.6em;
   border-radius: 2px; }
 
 .nav-toggle-label span::before, .nav-toggle-label span::after {
@@ -158,16 +176,16 @@ nav {
   position: absolute; }
 
 .nav-toggle-label span::before {
-  top: 32px; }
+  top: 20px; }
 
 .nav-toggle-label span::after {
-  bottom: 32px; }
+  bottom: 20px; }
 
 @media only screen and (max-width: 768px) {
   nav {
     transition: transform 300ms ease-in-out; }
-  nav h1 {
-    display: none; } }
+    nav h1 {
+      display: none; } }
 
 @media only screen and (min-width: 768px) {
   .nav-toggle-label {
@@ -187,7 +205,7 @@ nav {
         text-decoration: none; }
       nav .container li {
         padding: 0;
-        margin: 0 1rem 0 1rem;
+        margin: 0 1rem;
         text-align: center;
         align-items: center;
         display: flex;
@@ -207,14 +225,7 @@ nav {
           bottom: 0; }
         nav .container li a:hover::after {
           width: 100%;
-          transition: all ease-out 150ms; }
-  .nav_white {
-    background-color: white;
-    transition: all 0.5s ease; }
-    .nav_white li a {
-      color: gray !important; }
-    .nav_white li a:hover {
-      color: black !important; } }
+          transition: all ease-out 150ms; } }
 
 /* container-------------------*/
 .container {
