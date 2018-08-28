@@ -1,4 +1,23 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+/*@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);*/
+/*
+* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 400;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+ }
 $flyoung_red: rgb(208, 0, 0);
 
 body {
@@ -95,6 +114,8 @@ a:hover {opacity: 0.7;}
   color: gray;
   margin: 0;
   padding: 0 0 3em;
+  font-weight: 300;
+  font-size: .8em;
 }
 
 /*font font-awesome-4.7 icon */
