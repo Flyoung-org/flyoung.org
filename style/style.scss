@@ -2,7 +2,7 @@
 /*
 * Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
  */
-/*@font-face {
+@font-face {
   font-family: 'Noto Sans TC';
   font-style: normal;
   font-weight: 300;
@@ -17,7 +17,7 @@
    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
         url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
         url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
- }*/
+ }
 $flyoung_red: rgb(208, 0, 0);
 
 body {
