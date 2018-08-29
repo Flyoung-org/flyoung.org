@@ -49,30 +49,16 @@ a {
 a:hover {
   opacity: 0.7; }
 
-.xl {
-  margin-bottom: .5em;
-  font-family: 'Roboto Slab', serif;
-  font-size: 12vh; }
-  .xl img {
-    height: 2em; }
-  .xl span {
-    font-size: 1.333em; }
-
 @media only screen and (max-width: 768px) {
   .xl {
     font-size: 12vw; } }
 
-.content {
-  font-size: 1.5em;
-  font-weight: 300; }
+.light {
+  color: black; }
 
-.text, .text-bright {
-  text-align: left;
-  margin-bottom: 20px;
-  text-decoration: none; }
-
-.text-bright {
-  color: white; }
+.dark {
+  color: white;
+  text-shadow: 0 1px 5px black; }
 
 #logo {
   margin: 0.5rem 0;
@@ -253,14 +239,9 @@ nav {
   padding: 80px 32px;
   align-items: center; }
 
-.h-full {
-  height: 100vh; }
-
-.flex {
-  display: flex; }
-
-.block, .image-left, .image-right {
-  width: 100%; }
+.block {
+  width: 100%;
+  text-align: center; }
 
 img {
   max-width: 100%;
@@ -270,14 +251,9 @@ img {
   .container {
     display: flex; }
   .block {
-    width: 50%; }
-  .image-left {
-    margin-right: 64px; }
-  .image-right {
-    margin-left: 64px;
-    order: 1;
-    -webkit-order: 1;
-    /* Safari 6.1+ */ } }
+    width: 50%;
+    padding: 0 30px;
+    text-align: center; } }
 
 /* parallax--------------*/
 .parallax {
@@ -285,3 +261,28 @@ img {
   background-position: right;
   background-attachment: fixed;
   background-size: cover; }
+
+.vertical-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.btn {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding: 20px;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #d00000; }
+
+#who-we-are {
+  background-color: #f3f3f3; }
+
+#where-we-work {
+  background-color: #fafafa; }
