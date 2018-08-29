@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+.general-heading {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 60px 0 60px;
+  letter-spacing: 3px; }
+  .general-heading .general-heading_header {
+    font-size: 64px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0; }
+  .general-heading .general-heading_sub {
+    font-size: 24px;
+    font-weight: 400; }
+  .general-heading .general-heading_line {
+    background-color: #d00000;
+    height: 4px;
+    line-height: 0;
+    margin: 20px auto 0;
+    width: 48px; }
+
+.heading-indented {
+  font-family: 'Lato', sans-serif;
+  text-align: left; }
+  .heading-indented .heading-indented_header {
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 3px; }
+    .heading-indented .heading-indented_header span {
+      display: inline-block;
+      text-indent: .8em; }
+  .heading-indented .heading-indented_header::before {
+    background-color: #d00000;
+    content: '';
+    display: inline-block;
+    height: .8em;
+    width: 4px; }
+  .heading-indented .heading-indented_text {
+    font-size: 24px;
+    font-family: 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; }
