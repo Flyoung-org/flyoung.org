@@ -282,7 +282,6 @@ img {
 /* parallax--------------*/
 .parallax {
   height: 100vh;
-  background-image: url("../img/index/hand_black_copy.png");
   background-position: right;
   background-attachment: fixed;
   background-size: cover; }
