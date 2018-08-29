@@ -240,8 +240,7 @@ nav {
   align-items: center; }
 
 .block {
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
 
 img {
   max-width: 100%;
@@ -252,8 +251,7 @@ img {
     display: flex; }
   .block {
     width: 50%;
-    padding: 0 30px;
-    text-align: center; } }
+    padding: 0 30px; } }
 
 /* parallax--------------*/
 .parallax {
