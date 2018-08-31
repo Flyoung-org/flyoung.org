@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/general-heading.css">
+    <link rel="stylesheet" href="/style/bootstrap-grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <!-- Add icon library -->
@@ -23,12 +24,12 @@
   </head>
   <body>
     <header class="boxshadow">
-      <h1 id="logo"><a href="index.html"><img src="svg/logo.svg" color='#ff0000' alt="FLYOUNG"></a></h1>
+      <h1 class="logo-sm"><a href="index.html"><img src="svg/logo.svg" color='#ff0000' alt="FLYOUNG"></a></h1>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
       <nav id='nav'>
         <div class="container">
-          <h1 id="logo"><a href="index.html"><img src="svg/logo.svg" alt="FLYOUNG"></a></h1>
+          <h1 class="logo-sm"><a href="index.html"><img src="svg/logo.svg" alt="FLYOUNG"></a></h1>
           <ul>
             <li><a href="about.html">About Us</a></li>
             <li><a href="cambodia.html">Cambodia</a></li>
@@ -52,12 +53,16 @@
     </header>
     <div class="parallax vertical-middle" style="background-image: url('./img/index/hand_black_copy.jpg');">
       <div class="container">
-        <div class="general-heading dark">
-          <h2 class="general-heading_header">TO SERVICE</h2>
-          <div class="general-heading_sub">
-            <p>is not necessarily to give, or to get.</p>
+        <div class="row">
+          <div class="col">
+            <div class="general-heading dark">
+              <h2 class="general-heading_header">TO SERVICE</h2>
+              <div class="general-heading_sub">
+                <p>is not necessarily to give, or to get.</p>
+              </div>
+              <p class="general-heading_line"></p>
+            </div>
           </div>
-          <p class="general-heading_line"></p>
         </div>
       </div>
     </div>
@@ -65,16 +70,20 @@
     <!--  who-we-are block -->
     <div class="vertical-middle" id='who-we-are'>
       <div class="container">
-        <div class="block">
-          <img src="img/logo.png" width="50%">
-        </div>
-        <div class="block heading-indented">
-          <h2 class="text heading-indented_header"><span>WHO WE ARE</span></h2>
-          <div class="heading-indented_text">
-            <p>嗨！我們是 臺北醫學大學飛洋國際服務團（TMU FLYoung International Service）</p>
-            <p>這裡可以簡單介紹一下flyoung，然後用下面按鈕連結到獨立的一個網頁(也就是最上面navbar的“About”)做更詳細的介紹</p>
+        <div class="row">
+          <div class="col-sm vertical-middle">
+            <div class="logo-md">
+              <img src="img/logo.png">
+            </div>
           </div>
-          <a href="about.html" class="btn">MORE ABOUT US</a>
+          <div class="col-sm heading-indented">
+            <h2 class="text heading-indented_header"><span>WHO WE ARE</span></h2>
+            <div class="heading-indented_text">
+              <p>嗨！我們是 臺北醫學大學飛洋國際服務團（TMU FLYoung International Service）</p>
+              <p>這裡可以簡單介紹一下flyoung，然後用下面按鈕連結到獨立的一個網頁(也就是最上面navbar的“About”)做更詳細的介紹</p>
+            </div>
+            <a href="about.html" class="btn">MORE ABOUT US</a>
+          </div>
         </div>
       </div>
     </div>
@@ -82,12 +91,16 @@
     <!--  where we work block -->
     <div class="vertical-middle" id='where-we-work'>
       <div class="container">
-        <div class="general-heading light">
-          <h2 class="general-heading_header">WHERE WE WORK</h2>
-          <div class="general-heading_sub">
-            <p>Think like a local.</p>
+        <div class="row">
+          <div class="col">
+            <div class="general-heading light">
+              <h2 class="general-heading_header">WHERE WE WORK</h2>
+              <div class="general-heading_sub">
+                <p>Think like a local.</p>
+              </div>
+              <p class="general-heading_line"></p>
+            </div>
           </div>
-          <p class="general-heading_line"></p>
         </div>
       </div>
     </div>
@@ -112,7 +125,7 @@
     <footer>
       <div class="container">
         <div class="block">
-          <h1 id="logo">
+          <h1 class="logo-sm">
             <img src="svg/logo.svg" alt="FLYOUNG">
           </h1>
           <p class="privacy_terms"><a href="privacy_terms.html">Privacy & Terms</a></p>

@@ -60,11 +60,16 @@ a:hover {
   color: white;
   text-shadow: 0 1px 5px black; }
 
-#logo {
+.logo-sm {
   margin: 0.5rem 0;
   padding-left: 0; }
-  #logo img {
+  .logo-sm img {
     height: 26px; }
+
+.logo-md {
+  padding-left: 0; }
+  .logo-md img {
+    width: 50%; }
 
 .privacy_terms a {
   text-decoration: none;
@@ -234,24 +239,21 @@ nav {
 
 /* container-------------------*/
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px 32px;
-  align-items: center; }
+  padding-bottom: 12px;
+  padding-top: 72px;
+  align-items: center;
+  text-align: center; }
 
-.block {
-  width: 100%; }
+[class*="col-"] {
+  margin-bottom: 48px; }
 
 img {
   max-width: 100%;
   height: auto; }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    display: flex; }
-  .block {
-    width: 50%;
-    padding: 0 30px; } }
+  nav .container {
+    display: flex; } }
 
 /* parallax--------------*/
 .parallax {
