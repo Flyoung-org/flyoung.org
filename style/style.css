@@ -58,7 +58,7 @@ a:hover {
 
 .dark {
   color: white;
-  text-shadow: 0 1px 5px black; }
+  text-shadow: 0 2px 2px black; }
 
 .logo-sm {
   margin: 0.5rem 0;
@@ -118,6 +118,8 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: all 0.5s ease; }
+  nav h1 a {
+    vertical-align: -6px; }
   nav ul {
     margin: 0;
     padding: 0;
@@ -244,12 +246,8 @@ nav {
   align-items: center;
   text-align: center; }
 
-[class*="col-"] {
+[class*="col-"], .col {
   margin-bottom: 48px; }
-
-img {
-  max-width: 100%;
-  height: auto; }
 
 @media only screen and (min-width: 768px) {
   nav .container {
@@ -280,6 +278,17 @@ img {
   text-decoration: none;
   vertical-align: middle;
   background-color: #d00000; }
+
+.img-frame {
+  width: 100%;
+  overflow: hidden; }
+  .img-frame img {
+    width: 100%; }
+  .img-frame .btn {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 #who-we-are {
   background-color: #f3f3f3; }
