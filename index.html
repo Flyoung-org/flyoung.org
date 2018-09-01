@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/general-heading.css">
     <link rel="stylesheet" href="/style/bootstrap-grid.css">
+    <link rel="stylesheet" href="/style/carousel.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <!-- Add icon library -->
@@ -25,12 +26,12 @@
   </head>
   <body>
     <header class="boxshadow">
-      <h1 class="logo-sm"><a href="index.html"><img src="svg/logo.svg" color='#ff0000' alt="FLYOUNG"></a></h1>
+      <div class="logo-sm"><a href="index.html"><img src="svg/logo.svg" color='#ff0000' alt="FLYOUNG"></a></div>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
       <nav id='nav'>
         <div class="container">
-          <h1 class="logo-sm"><a href="index.html"><img src="svg/logo.svg" alt="FLYOUNG"></a></h1>
+          <div class="logo-sm"><a href="index.html"><img src="svg/logo.svg" alt="FLYOUNG"></a></div>
           <ul>
             <li><a href="about.html">About Us</a></li>
             <li><a href="cambodia.html">Cambodia</a></li>
@@ -120,6 +121,59 @@
       </div>
     </div>
 
+    <!--carousel slide-->
+    <div class="vertical-middle" id='classes'>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="general-heading light">
+              <h2 class="general-heading_header">社課情況</h2>
+              <div class="general-heading_sub">
+                <p>社課真的超級棒的喔喔喔!</p>
+              </div>
+              <p class="general-heading_line"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="demo" class="carousel slide full-width" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/index/carousel/hank2.jpg" alt="hank" width="100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/index/carousel/cambodia_presentation2.jpg" alt="cambodia_presentation" width="100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/index/carousel/povertyinc2.jpg" alt="povertyinc" width="100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/index/carousel/tft2.jpg" alt="tft" width="100%">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+
     <!--  get-involved block -->
     <div class="vertical-middle" id='get-involved'>
       <div class="container">
@@ -158,9 +212,9 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h1 class="logo-sm">
+            <div class="logo-sm">
               <img src="svg/logo.svg" alt="FLYOUNG">
-            </h1>
+            </div>
             <p><a href="privacy_terms.html">Privacy & Terms</a></p>
           </div>
 
@@ -187,6 +241,8 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src='js/nav_white.js'></script>
     <!--
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

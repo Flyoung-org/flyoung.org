@@ -108,7 +108,7 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: all 0.5s ease; }
-  nav h1 a {
+  nav [class*="logo-"] a {
     vertical-align: -6px; }
   nav ul {
     margin: 0;
@@ -186,20 +186,20 @@ nav {
 @media only screen and (max-width: 767.98px) {
   nav {
     transition: transform 300ms ease-in-out; }
-    nav h1 {
+    nav [class*="logo-"] {
       display: none; } }
 
 @media only screen and (min-width: 768px) {
   .nav-toggle-label {
     display: none; }
-  header > h1 {
+  header > [class*="logo-"] {
     display: none; }
   nav {
     background-color: transparent;
     transform: scale(1, 1); }
     nav .container {
       align-items: stretch; }
-      nav .container h1 {
+      nav .container [class*="logo-"] {
         margin: 0;
         padding: 0.5rem; }
       nav .container ul {
@@ -238,7 +238,7 @@ nav {
   margin-bottom: 1em; }
 
 .row {
-  padding-bottom: 48px; }
+  padding-bottom: 36px; }
 
 @media only screen and (min-width: 768px) {
   nav .container {
@@ -284,6 +284,15 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.full-width {
+  width: 100vw;
+  margin-bottom: 48px; }
+
+@media only screen and (max-width: 767.98px) {
+  .full-width img {
+    height: 50vh;
+    width: auto; } }
+
 #who-we-are {
   background-color: #f3f3f3; }
 
@@ -291,6 +300,11 @@ nav {
   background-color: #fafafa; }
 
 #get-involved {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../img/index/join.jpg");
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../img/index/join.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto; }
+
+/*make the background-image cover the block responsively*/
+@media only screen and (max-width: 954px) {
+  #get-involved {
+    background-size: auto 100%; } }
