@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     letter-spacing: 3px;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   .general-heading_sub {
     font-size: 20px;
@@ -33,7 +33,7 @@
     font-weight: 900;
     font-size: 2em;
     letter-spacing: 3px;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   .heading-indented_bar::before {
     background-color: #d00000;
