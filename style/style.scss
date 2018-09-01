@@ -30,11 +30,18 @@ body {
 /* footer ----------*/
 footer {
   background-color: #f2f2f2;
-  .container {
-    align-items: stretch;
+  p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2em;
+    color: gray;
+    a {
+      text-decoration: none;
+      color: gray;
+    }
   }
-  .block {
-    margin: 0 2em;
+  .fab {
+    font-size: 1.5em;
   }
 }
 
@@ -50,16 +57,17 @@ h3 {
 }
 
 h4 {
-  font-weight: 300;
+  font-weight: 400;
   padding: 0;
   margin: 0;
   margin-bottom: 2em;
+  color: gray;
 }
 
 a {color: $flyoung_red;}
 a:hover {opacity: 0.7;}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   .xl {
     font-size: 12vw;
   }
@@ -89,13 +97,6 @@ a:hover {opacity: 0.7;}
   }
 }
 
-.privacy_terms {
-  a {
-    text-decoration: none;
-    color: gray;
-  }
-}
-
 .copyright {
   text-align: center;
   color: gray;
@@ -106,22 +107,13 @@ a:hover {opacity: 0.7;}
 }
 
 /*font font-awesome-4.7 icon */
-.fa {
-    padding: .3em;
-    width: 1em;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+  color: #3B5998;
 }
 
-.fa-youtube-play {
-  background: #bb0000;
-  color: white;
+.fa-youtube {
+  color: #ff0000;
 }
 
 /*navigtion bar*/
@@ -174,7 +166,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   nav {
     .container{
       padding: 0;
@@ -252,7 +244,7 @@ nav {
   bottom: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   nav {
     transition: transform 300ms ease-in-out;
     h1 {display: none;}
@@ -311,7 +303,6 @@ nav {
   padding-bottom: 12px;
   padding-top: 72px;
   align-items: center;
-  text-align: center;
 }
 
 [class*="col-"], .col {
@@ -336,6 +327,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.horizontal-middle {
+  text-align: center;
 }
 
 .btn {

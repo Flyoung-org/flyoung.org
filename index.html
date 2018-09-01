@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <!-- Add icon library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -68,10 +69,10 @@
     </div>
 
     <!--  who-we-are block -->
-    <div class="vertical-middle" id='who-we-are'>
+    <div class="vertical-middle" id='who-we-are'> <!--to make the background-extend-->
       <div class="container">
         <div class="row">
-          <div class="col-sm vertical-middle">
+          <div class="col-sm vertical-middle horizontal-middle">
             <div class="logo-md">
               <img src="img/logo.png">
             </div>
@@ -102,14 +103,14 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
+        <div class="row  justify-content-around">
+          <div class="col-10 col-md-5">
             <div class="img-frame">
               <img src="img/index/cambodia.jpg" alt="cambodia">
               <a href="about.html" class="btn">cambodia</a>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-10 col-md-5">
             <div class="img-frame">
               <img src="img/index/swatini.jpg" alt="swatini">
               <a href="about.html" class="btn">swatini</a>
@@ -138,26 +139,29 @@
     <!--footer-------------------->
     <footer>
       <div class="container">
-        <div class="block">
-          <h1 class="logo-sm">
-            <img src="svg/logo.svg" alt="FLYOUNG">
-          </h1>
-          <p class="privacy_terms"><a href="privacy_terms.html">Privacy & Terms</a></p>
-        </div>
+        <div class="row">
+          <div class="col">
+            <h1 class="logo-sm">
+              <img src="svg/logo.svg" alt="FLYOUNG">
+            </h1>
+            <p><a href="privacy_terms.html">Privacy & Terms</a></p>
+          </div>
 
-        <div class="block">
-          <h3>Address</h3>
-          <h4>250 Wuxing St. Taipei 11031, TW</h4>
-          <h3>Phone</h3>
-          <h4>(02)27361661 #8616</h4>
-        </div>
+          <div class="col">
+            <h3>Address</h3>
+            <p>250 Wuxing St. Taipei 11031, TW</p>
+            <h3>Phone</h3>
+            <p>(02)27361661 #8616</p>
+          </div>
 
-        <div class="block">
-          <h3>Follow us</h3>
-          <h4>
-            <a href="https://www.facebook.com/TMU.FLYoung/" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-youtube-play"></a>
-          </h4>
+          <div class="col">
+            <h3>Follow us</h3>
+            <p>
+              <a href="https://www.facebook.com/TMU.FLYoung/" class="fab fa-facebook"></a>
+              <a href="#" class="fab fa-youtube"></a>
+            </p>
+          </div>
+
         </div>
 
       </div>
