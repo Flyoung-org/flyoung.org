@@ -235,12 +235,14 @@ nav {
 
 /* container-------------------*/
 .container {
-  padding-bottom: 12px;
-  padding-top: 72px;
+  padding-top: 48px;
   align-items: center; }
 
 [class*="col-"], .col {
-  margin-bottom: 48px; }
+  margin-bottom: 1em; }
+
+.row {
+  padding-bottom: 48px; }
 
 @media only screen and (min-width: 768px) {
   nav .container {
