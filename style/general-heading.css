@@ -10,7 +10,8 @@
     font-weight: 900;
     margin: 0;
     padding: 0;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    text-transform: capitalize; }
   .general-heading .general-heading_sub {
     font-size: 20px;
     font-weight: 400;
@@ -28,8 +29,9 @@
   .heading-indented .heading-indented_header {
     font-weight: 900;
     font-size: 2em;
-    letter-spacing: 3px; }
-  .heading-indented .heading-indented_header::before {
+    letter-spacing: 3px;
+    text-transform: capitalize; }
+  .heading-indented .heading-indented_bar::before {
     background-color: #d00000;
     content: '';
     display: inline-block;
@@ -39,5 +41,5 @@
     position: relative;
     top: 1px; }
   .heading-indented .heading-indented_text {
-    font-size: 24px;
+    font-size: 21px;
     font-family: 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; }

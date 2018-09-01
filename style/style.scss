@@ -46,11 +46,6 @@ footer {
 }
 
 /* text-----------------*/
-h2 {
-    font-size: 3.5em;
-    font-weight: 300;
-}
-
 h3 {
   font-weight: 400;
   margin-bottom: .3em;
@@ -371,4 +366,10 @@ nav {
 
 #where-we-work {
   background-color: #fafafa;
+}
+
+#get-involved {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ),url('../img/index/join.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
