@@ -18,7 +18,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
-  font-weight: 400; }
+  font-weight: 300;
+  line-height: 1.75; }
 
 /* footer ----------*/
 footer {
@@ -259,6 +260,9 @@ nav {
 .horizontal-middle {
   text-align: center; }
 
+.horizontal-right {
+  text-align: right; }
+
 .btn {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
@@ -293,6 +297,10 @@ nav {
     height: 50vh;
     width: auto; } }
 
+.structure {
+  max-width: 100%;
+  max-height: 50vh; }
+
 #who-we-are {
   background-color: #f3f3f3; }
 
@@ -308,3 +316,33 @@ nav {
 @media only screen and (max-width: 954px) {
   #get-involved {
     background-size: auto 100%; } }
+
+#intro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #d00000;
+  color: white;
+  font-size: 24px; }
+
+#history {
+  background-color: #f3f3f3; }
+
+#cooperate {
+  background-color: #f3f3f3; }
+
+#ctep-mark {
+  font-size: 45px;
+  font-weight: 400;
+  color: #d00000; }
+
+#quote-block {
+  background-color: #d00000;
+  color: white;
+  font-size: 24px; }
+
+#comma {
+  font-size: 300px;
+  line-height: 0.5;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  top: 80px; }
