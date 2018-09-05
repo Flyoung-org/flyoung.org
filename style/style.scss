@@ -231,13 +231,13 @@ nav {
 .nav-toggle-label span::before {
   @extend %nav-toggle-label-span;
   @extend %nav-toggle-label-span-before_after;
-  top: 15px
+  top: 18px
 }
 
 .nav-toggle-label span::after {
   @extend %nav-toggle-label-span;
   @extend %nav-toggle-label-span-before_after;
-  bottom: 15px;
+  bottom: 18px;
 }
 
 @media only screen and (max-width: 767.98px) {
