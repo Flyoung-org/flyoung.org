@@ -310,7 +310,8 @@ nav {
   .project-simple .project-simple-title {
     background-color: #d00000;
     color: white;
-    padding: 0.75em; }
+    padding: 0.75em;
+    font-weight: 400; }
 
 #who-we-are {
   background-color: #f3f3f3; }
