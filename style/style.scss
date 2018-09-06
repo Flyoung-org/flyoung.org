@@ -351,20 +351,6 @@ nav {
   background-color: #d00000;
 }
 
-.img-frame {
-  width: 100%;
-  overflow: hidden;
-  img {
-    width: 100%;
-  }
-  .btn {
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
 .full-width {
   width:100vw;
   margin-bottom:48px;
@@ -378,17 +364,36 @@ nav {
   }
 }
 
-.structure {
+.org-structure {
   max-width: 100%;
   max-height: 50vh;
+}
+
+.project-simple {
+  height: 100%;
+  background-color: #d00000;
+  background-clip: content-box; /*background a div without the padding area*/
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  .project-simple-img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+  }
+  .project-simple-title {
+    background-color: #d00000;
+    color: white;
+    padding: 0.75em;
+  }
 }
 
 #who-we-are {
   background-color: #f3f3f3;
 }
 
-#where-we-work {
-  background-color: #fafafa;
+#projects {
+  background-color: #fcf8f2;
 }
 
 #get-involved {
