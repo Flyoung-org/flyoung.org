@@ -314,6 +314,12 @@ nav {
   }
 }
 
+/* the block at the top of the page*/
+.top-block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /* parallax--------------*/
 .parallax {
   height: 100vh;
@@ -409,8 +415,6 @@ nav {
 }
 
 #intro {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: rgb(208,0,0);
   color: white;
   font-size: 24px;
