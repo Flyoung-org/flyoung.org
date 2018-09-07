@@ -284,6 +284,7 @@ nav {
 
 .link-underline {
   font-weight: 400;
+  font-size: 1.2em;
   text-decoration: none;
   background-image: linear-gradient(#d00000 100%, #d00000 100%);
   background-position: 0 100%;
