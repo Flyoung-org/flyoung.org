@@ -357,6 +357,22 @@ nav {
   background-color: #d00000;
 }
 
+.link-underline {
+  font-weight: 400;
+  text-decoration: none;
+  background-image: linear-gradient(#d00000 100%, #d00000 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  border-bottom: 2px solid #d00000;
+  color: black;
+  transition: background-size .100s ease-in;
+}
+
+.link-underline:hover {
+  background-size: 100% 20%;
+}
+
 .full-width {
   width:100vw;
   margin-bottom:48px;
