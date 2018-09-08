@@ -19,11 +19,13 @@ body {
   padding: 0;
   font-family: 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
   font-weight: 300;
+  font-size: 21px;
   line-height: 1.75; }
 
 /* footer ----------*/
 footer {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  font-size: 14px; }
   footer p {
     padding: 0;
     margin: 0;
@@ -86,9 +88,6 @@ a:hover {
 /*font font-awesome-4.7 icon */
 .fa-facebook {
   color: #3B5998; }
-
-.fa-youtube {
-  color: #ff0000; }
 
 /*navigtion bar*/
 header {
@@ -272,9 +271,9 @@ nav {
   text-transform: uppercase;
   color: white;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 3px;
-  padding: 20px;
+  padding: 18px;
   margin: 20px 0;
   display: inline-block;
   text-decoration: none;
@@ -340,9 +339,30 @@ nav {
 .gallery:hover {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); }
 
+.gallery-lg {
+  margin: 0 16px; }
+  .gallery-lg .row {
+    padding: 0; }
+  .gallery-lg [class*="col-"], .gallery-lg .col {
+    padding: 0;
+    margin: 0; }
+  .gallery-lg img {
+    display: block; }
+
 .floating-block {
   background-color: #f3f3f3;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2); }
+
+.contact [class*="fa-"] {
+  margin-right: 16px;
+  color: #d00000; }
+
+.contact a {
+  text-decoration: none;
+  color: inherit; }
+
+.contact a:hover {
+  color: #d00000; }
 
 #who-we-are {
   background-color: #f3f3f3; }
