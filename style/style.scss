@@ -342,7 +342,7 @@ nav {
 }
 
 .btn {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
   text-transform: uppercase;
   color: white;
   font-weight: 700;
@@ -354,6 +354,10 @@ nav {
   text-decoration: none;
   vertical-align: middle;
   background-color: #d00000;
+}
+.btn:hover {
+  background-color: #ba0000;
+  opacity: 1;
 }
 
 .link-underline {
@@ -435,14 +439,14 @@ nav {
   background-color: #fcf8f2;
 }
 
-#get-involved {
+#join-us {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),url('../img/index/join.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 /*make the background-image cover the block responsively*/
 @media only screen and (max-width:954px) {
-  #get-involved {
+  #join-us {
     background-size: auto 100%;
   }
 }
