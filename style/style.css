@@ -260,6 +260,11 @@ nav {
   align-items: center;
   justify-content: center; }
 
+.vertical-baseline {
+  display: flex;
+  align-items: baseline;
+  justify-content: center; }
+
 .horizontal-middle {
   text-align: center; }
 
@@ -351,7 +356,7 @@ nav {
 
 .floating-block {
   background-color: #f3f3f3;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.2); }
 
 .contact [class*="fa-"] {
   margin-right: 16px;
@@ -366,9 +371,6 @@ nav {
 
 #who-we-are {
   background-color: #f3f3f3; }
-
-#projects {
-  background-color: #fcf8f2; }
 
 #join-us {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../img/index/join.jpg");
@@ -408,5 +410,5 @@ nav {
   position: relative;
   top: 80px; }
 
-#classes {
-  font-size: 18px; }
+#what-we-do {
+  background-color: #f9f9f9; }
