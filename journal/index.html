@@ -1,0 +1,13 @@
+---
+title: journal
+---
+<h1>出隊日誌</h1>
+
+  <ul>
+    {%- for journal in site.journal -%}
+      <li>
+        <h2><a href="{{ journal.url }}">{{ journal.title }}</a></h2>
+        <p>{{ journal.excerpt }}</p>
+      </li>  
+    {%- endfor -%}
+ </ul>
