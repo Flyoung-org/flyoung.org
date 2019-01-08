@@ -3,7 +3,7 @@ permalink: pretty
 collections:
   projects:
     output: true
-  journal:
+  journals:
     output: true
 
 defaults:
