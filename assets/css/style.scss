@@ -1,3 +1,5 @@
+---
+---
 /*@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);*/
 /*
 * Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
@@ -468,7 +470,7 @@ nav {
 }
 
 #join-us {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),url('../assets/img/index/join.jpg');
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),url('/assets/img/index/join.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
