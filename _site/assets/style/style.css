@@ -373,7 +373,7 @@ nav {
   background-color: #f3f3f3; }
 
 #join-us {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../img/index/join.jpg");
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../assets/img/index/join.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto; }
 
