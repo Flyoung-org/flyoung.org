@@ -18,7 +18,11 @@ body {
   font-family: 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
   font-weight: 300;
   font-size: 21px;
-  line-height: 1.75; }
+  line-height: 1.75;
+  /*sticky footer*/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
 /* footer ----------*/
 footer {
@@ -34,6 +38,10 @@ footer {
       color: gray; }
   footer .fab {
     font-size: 1.5em; }
+
+.content {
+  flex: 1;
+  /*sticky footer*/ }
 
 /* text-----------------*/
 h3 {
