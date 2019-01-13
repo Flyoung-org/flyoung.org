@@ -4,7 +4,7 @@ title: 出隊日誌
 <div class="container">
   <div class="row">
     {%- for journal in site.journals -%}
-    <div class="col-12 col-sm-6 col-lg-4 journal-widget">
+    <div class="col-12 col-md-6 col-lg-4 journal-widget">
       <a href="{{ journal.url }}">
         <img class="journal-img" src="/assets/img/journals/2018/{{ journal.date | date: "%Y-%m-%d" }}/large.jpg" alt="">
         <h4>{{ journal.title }}</h4>
