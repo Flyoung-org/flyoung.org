@@ -13,6 +13,15 @@ defaults:
     values:
       layout: "project"
   - scope:
+      path: "/journal/*"
+    values:
+      layout: "red_block"
+  - scope:
+      path: ""
+      type: "journals"
+    values:
+      layout: "journal"
+  - scope:
       path: ""
     values:
       layout: "default"
