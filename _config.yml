@@ -3,7 +3,7 @@ permalink: pretty
 collections:
   projects:
     output: true
-  journals:
+  journal:
     output: true
 
 defaults:
@@ -18,7 +18,7 @@ defaults:
       layout: "red_block"
   - scope:
       path: ""
-      type: "journals"
+      type: "journal"
     values:
       layout: "journal"
   - scope:

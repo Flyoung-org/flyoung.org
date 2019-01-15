@@ -1,15 +1,21 @@
 ---
 title: 出隊日誌
 ---
-<div class="container">
-  <div class="row">
-    {%- for journal in site.journals -%}
-    <div class="col-12 col-md-6 col-lg-4 journal-widget">
-      <a href="{{ journal.url }}">
-        <img class="journal-img" src="/assets/img/journals/2018/{{ journal.date | date: "%Y-%m-%d" }}/large.jpg" alt="">
-        <h4>{{ journal.title }}</h4>
-      </a>
-    </div> 
-    {%- endfor -%}
-  </div>
+<div class="vertical-middle" id='journal-widget-wrapper'>
+  <div class="container">
+      <div class="row">
+        {%- for journal in site.journal -%}
+        <div class="col-12 col-md-6 col-lg-4 journal-widget">
+          <a href="{{ journal.url }}">
+            <div class="journal-widget-img">
+                <img src="/assets/img/journal/2018/{{ journal.date | date: "%Y-%m-%d" }}/large.jpg" alt="">
+            </div>
+            <div class="journal-widget-text">
+              <h4>{{ journal.title }}</h4>
+            </div>
+          </a>
+        </div> 
+        {%- endfor -%}
+      </div>
+    </div>
 </div>

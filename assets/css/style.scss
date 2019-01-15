@@ -301,10 +301,17 @@ nav {
   }
 }
 
-/* container-------------------*/
+/* grid system-------------------*/
 .container {
   padding-top: 48px;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-left: 14px !important;
+    margin-right: 14px !important;
+  }
 }
 
 [class*="col-"], .col {
@@ -472,16 +479,19 @@ nav {
   }
 }
 
-/*journal index page*/
-.journal-img {
+/*-journal index page-*/
+.journal-widget-img {
   /*width: calc(100% + 40px) !important;*/
   width:100%;
   height:auto;
+  img {
+    width: 100%;
+  }
 }
 /*journal-widget*/
 .journal-widget {
   margin-bottom: 40px;
-  padding: 0 22px !important;
+  padding: 0 20px !important;
   border-right: 1px solid #cfd5e4;
   a {
     color: black;
@@ -489,10 +499,12 @@ nav {
   }
   h4 {
     margin: 0;
-    padding: 12px 0 0;
     color: black;
     font-weight: 700;
   }
+}
+.journal-widget-text {
+  padding: 12px 0 24px;
 }
 .journal-widget:last-of-type {
   border-right: none;
@@ -504,30 +516,35 @@ nav {
   .journal-widget {
     border: 1px solid #cfd5e4;
   }
+   /*extend the image width to touch the border */
+  .journal-widget-img {
+    width: calc(100% + 40px) !important;
+    margin-left: -20px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .journal-widget:nth-child(even) {
-    padding-right: 0 !important;
+    /*--left and right padding-- padding-right: 0 !important; */
     border-right: none;
     border-right-width: initial;
     border-right-style: none;
     border-right-color: initial;
   }
-  .journal-widget:nth-child(odd) {
+  /*--left and right padding--.journal-widget:nth-child(odd) {
     padding-left: 0 !important;
-  }
+  }*/
 }
 @media (min-width: 992px) {
   .journal-widget:nth-child(3n) {
-    padding-right: 0 !important;
+    /*--left and right padding-- padding-right: 0 !important;*/
     border-right: none;
     border-right-width: initial;
     border-right-style: none;
     border-right-color: initial;
   }
-  .journal-widget:nth-child(3n-2) {
+  /*--left and right padding-- .journal-widget:nth-child(3n-2) {
     padding-left: 0 !important;
-  }
+  }*/
 }
 
 
