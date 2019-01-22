@@ -563,7 +563,7 @@ nav {
   font-size: 2em;
   }
   h2 {
-    margin-bottom: 0;
+    margin: 50px 0 0;
     font-weight: 700;
     font-size: 1.4em;
   }
@@ -574,12 +574,16 @@ nav {
   }
   hr {
     margin-bottom: 2em;
-    border-color: #f3f3f3;
+    border-color: #3a3a3a;
   }
 }
 .journal-content {
+  h3 {
+    margin: 42px 0 21px;
+  }
   p {
     text-indent: 2em;
+    margin: 0 0 21px; 
   }
   img {
     max-width: 100%;

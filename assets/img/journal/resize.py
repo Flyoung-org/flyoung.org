@@ -12,13 +12,13 @@ def resize(root, img_filename, basewidth, new_img_filename):
     print(sm_img_fullpath + " saved")
 
 for root, directories, filenames in os.walk(os.getcwd()):
-    if ("lg.jpg" in filenames or "lg.JPG" in filenames) and "sm.jpg" not in filenames:
+    if ("1lg.jpg" in filenames or "1lg.JPG" in filenames) and "1sm.jpg" not in filenames:
         print("shrink!")
         try:
-            resize(root, "lg.jpg", 600, 'sm.jpg')
+            resize(root, "1lg.jpg", 600, '1sm.jpg')
             print("jpg")
         except:
-            resize(root, "lg.JPG", 600, 'sm.jpg')
+            resize(root, "1lg.JPG", 600, '1sm.jpg')
             print("JPG")
 
 
