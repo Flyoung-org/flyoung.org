@@ -20,5 +20,3 @@ for root, directories, filenames in os.walk(os.getcwd()):
         except:
             resize(root, "1lg.JPG", 600, '1sm.jpg')
             print("JPG")
-
-

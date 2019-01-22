@@ -521,7 +521,7 @@ nav {
 
    /*extend the image width to touch the border */
   .journal-widget-img {
-    width: calc(100% + 40px) !important;
+    min-width: calc(100% + 40px) !important;
     margin-left: -20px;
   }
 
