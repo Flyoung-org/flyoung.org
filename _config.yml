@@ -6,8 +6,6 @@ collections:
   journal:
     output: true
 
-url: "/" # the base hostname & protocol for your site
-
 defaults:
   - scope:
       path: ""
