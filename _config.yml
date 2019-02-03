@@ -6,8 +6,6 @@ collections:
   journal:
     output: true
 
-baseurl: "/flyoung.org"
-
 defaults:
   - scope:
       path: ""
