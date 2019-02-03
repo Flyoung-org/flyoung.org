@@ -6,7 +6,7 @@ collections:
   journal:
     output: true
 
-baseurl: "flyoung.org"
+baseurl: "/flyoung.org"
 
 defaults:
   - scope:
