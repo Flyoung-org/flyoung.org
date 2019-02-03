@@ -6,8 +6,8 @@ collections:
   journal:
     output: true
 
-baseurl = ""
-relativeurls = true
+baseurl: ""
+relativeurls: true
 
 defaults:
   - scope:
