@@ -518,7 +518,9 @@ nav {
   border-right-color: initial;
 }
 @media (max-width: 768px) {
-
+  .journal-widget {
+    border: none;
+  }
    /*extend the image width to touch the border */
   .journal-widget-img {
     min-width: calc(100% + 40px) !important;
