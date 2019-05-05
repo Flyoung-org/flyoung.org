@@ -1,0 +1,23 @@
+.general-heading {
+  text-align: center;
+  margin: 0;
+  .general-heading_header {
+    font-size: 52px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+  }
+  .general-heading_sub {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .general-heading_line {
+    background-color: #d00000;
+    height: 4px;
+    line-height: 0;
+    margin: 20px auto 0;
+    width: 48px;
+  }
+}

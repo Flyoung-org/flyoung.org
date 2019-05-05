@@ -1,0 +1,129 @@
+---
+path: /events/tmu-international-volunteer-class
+---
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
+html {
+  font-size: 24px;
+}
+
+body {
+  font-family: 'Roboto', 'Noto Sans TC script=all rev=1', 'Microsoft JhengHei', sans-serif !important;
+  font-weight: 300;
+}
+
+.parallax {
+  height: 100vh;
+  background-position: right;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.vertical-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-middle {
+  text-align: center;
+}
+
+.horizontal-right {
+  text-align: right;
+}
+
+.horizontal-left {
+  text-align: left;
+}
+
+.container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.btn {
+  border-radius: 0;
+  font-size: .7em;
+}
+.btn:hover {
+  opacity: .8;
+}
+
+.dark {
+  color: white;
+  text-shadow: 0 2px 2px black;
+}
+
+
+#a {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),url('{{ page.path }}/assets/img/headlice.jpg');
+  height: 60vh;
+}
+
+#b {
+  padding: 120px 0;
+  background-color: #F2F2EE;
+}
+
+#c {
+  img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+#course_info {
+  background-color: #F6F7F8;
+  ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+#join-us {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),url('{{ page.path }}/assets/img/join.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  padding: 120px 0;
+
+  .btn {
+    margin: 48px auto; 
+    background-color: rgb(251, 188, 5)
+  }
+}
+/*make the background-image cover the block responsively*/
+@media only screen and (max-width:954px) {
+  #join-us {
+    background-size: auto 100%;
+  }
+}
+
+footer {
+  h6 {
+    margin-bottom: 24px;
+  }
+  .row {
+    margin-bottom: 50px;
+  }
+
+  .col {
+    margin: 12px auto;
+  }
+
+  img {
+    max-height: 60px;
+    max-width: 100%;
+  }
+
+  hr {
+    width: 60%;
+  }
+}
+
+#all-rights-reserved {
+  margin: 50px auto;
+  font-size: .6em;
+}
