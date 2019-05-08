@@ -3,10 +3,6 @@ path: /events/tmu-international-volunteer-class
 ---
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
 
-html {
-  font-size: 24px;
-}
-
 body {
   font-family: 'Roboto', 'Noto Sans TC script=all rev=1', 'Microsoft JhengHei', sans-serif !important;
   font-weight: 300;
@@ -101,7 +97,9 @@ body {
   }
 }
 
-footer {
+.organizer {
+  background-color: #f2f2f2;
+  
   h6 {
     margin-bottom: 24px;
   }
