@@ -1,11 +1,50 @@
 ---
-title: 國際醫療服務研習營
+title: 國際醫療服務研習營 - 飛洋
 path: /events/tmu-international-volunteer-class
+speakers:
+  - name: 鄭凱元 醫師
+    eng_name: ChengKaiYuan
+    infos:
+    - 臺灣醫學生聯合會前會長
+    - 第69、70、71屆世界衛生大會與會代表
+    - 62屆世界衛生組織西太平洋區域會議世界醫學生聯盟代表
+    - 倫敦大學學院　精神醫學研究所博士候選人
+    - 倫敦國王學院　精神醫學心理學與神經科學研究所碩士
+    - 陽明大學醫學士
+  - name: 林元薇 專員
+    eng_name: LinYuanWay
+    infos:
+    - 嘉義基督教醫院國際醫療援助計畫辦公室主任
+    - 前北醫駐史瓦帝尼醫療團國際醫療專員
+    - 波士頓大學　公共衛生碩士
+    - 臺北醫學大學　公共衛生學士
+  - name: 卓浩右 研究員
+    eng_name: JoHowYo
+    infos:
+    - 常駐美墨邊境工廠人類學研究員
+    - 美國德州農工大學人類學博士候選人
+    - 台灣大學人類學碩士
+  - name: 許紘捷 講師
+    eng_name: Hank
+    infos:
+    - 常駐柬埔寨影像工作者
+    - Symbodia柬式符號創辦人
+  - name: 王文生 理事長
+    eng_name: WangWenSen
+    infos:
+    - 台飛國際志工交流協會理事長
+    - 清華大學肯亞國際志工團領隊
+    - 清華大學獅子山國際志工團團員
+    - 清華大學物理學士
+    
+  - name: 王詩菱　企劃經理
+    eng_name: WangShuLing
+    infos:
+    - Glocal Action 公益協會企畫經理
+    - 常駐泰緬邊境社區工作者
 ---
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="{{ page.path }}/assets/css/main.css">
 <link rel="stylesheet" href="{{ page.path }}/assets/css/general-heading.css">    
 <div id="a" class="parallax vertical-middle dark">
   <div class="container">
@@ -35,9 +74,36 @@ path: /events/tmu-international-volunteer-class
         <img src="{{ page.path }}/assets/img/tmu_logo.png" alt="tmu_logo">
       </div>
       <div class="col-12 col-md">
-        <p>國際醫療服務研習營集結跨領域、具豐富田野經驗之講師，與臺北醫學大學海外醫療服務隊合作，針對國際性衛生問題，從臨床醫學、公共衛生學、管理學、外交與人文社會等面向，窺探國際服務的樣貌！</p>
+        國際醫療服務研習營集結跨領域、具豐富田野經驗之講師，與臺北醫學大學海外醫療服務隊合作，針對國際性衛生問題，從臨床醫學、公共衛生學、管理學、外交與人文社會等面向，窺探國際服務的樣貌！
       </div>
     </div>
+  </div>
+</div>
+
+<div id="speakers">
+  <div class="container">
+
+        <h4 class="horizontal-middle">特邀講者</h4>
+        <div class="container">
+          <div class="row">
+          {% for speaker in page.speakers %}
+            <div class="col col-md-6 profile">
+              <div class="profile-pic">
+                  <img src="{{ page.path }}/assets/img/speakers/{{ speaker.eng_name }}.png" alt="{{ speaker.eng_name }}">
+              </div>
+              <div>
+                <h4>{{ speaker.name }}</h4>
+                <ul>
+                  {% for info in speaker.infos %}
+                  <li>{{ info }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+
   </div>
 </div>
 
