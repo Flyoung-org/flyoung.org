@@ -1,0 +1,67 @@
+---
+---
+nav {
+  background-color: transparent;
+  transition: all 0.5s ease;
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  li {
+
+    a {
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+    }
+    a:hover {
+      color: #e5e5e5;
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  nav {
+    .nav-item {
+      margin-left: 16px;
+      margin-right: 16px;
+      > .nav-link {
+        padding:0 !important;
+      }
+    }
+  }
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(208, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+}
+
+
+/* navbar color */
+.nav-white {
+  background-color: white;
+  li {
+    a {
+      color: #515151 ;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  nav {
+    background-color: white;
+    li {
+      a {
+        color: #515151 ;
+      }
+      a:hover {
+        color: black;
+      }
+    }
+  }
+}

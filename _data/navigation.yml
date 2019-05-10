@@ -2,6 +2,11 @@
   link: /about/
 - name: 專案計畫
   link: /projects/
+  sublinks:
+    - name: 柬埔寨王國服務隊
+      link: /cambodia/projects/
+    - name: 史瓦帝尼服務隊
+      link: /eswatini/projects/
 - name: 飛洋課程
   link: /class/
 - name: 加入我們

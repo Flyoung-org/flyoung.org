@@ -1,14 +1,89 @@
-<nav id='nav' class="nav_white">
+<link rel="stylesheet" href="/assets/css/navbar.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--
+<script src='/assets/js/nav_transparent.js'></script>
+-->
+
+
+<nav id='nav' class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <div class="logo-sm"><a href="/"><img class="logo" src="/assets/img/svg/logo.svg" alt="FLYOUNG"></a></div>
-    <ul>
-      {%- for item in site.data.navigation -%}
-        <li>
-          <a href="{{ item.link | relative_url }}">
-            {{ item.name }}
-          </a>
-        </li>
-      {%- endfor -%}
-    </ul>
+    <a class="navbar-brand" href="/">
+      <img class="logo" height="26" alt="Flyoung" style="vertical-align: -5.2px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        {%- for item in site.data.navigation -%}
+          {% if item.sublinks %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ item.name }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {% for sublink in item.sublinks %}
+              <a class="dropdown-item" href="{{ sublink.link }}">{{ sublink.name }}</a>
+              {% endfor %}
+            </div>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ item.link | relative_url }}">
+              {{ item.name }}
+            </a>
+          </li>
+          {% endif %}
+        {%- endfor -%}
+      </ul>  
+    </div>
   </div>
 </nav>
+
+<script>
+  $('.dropdown').hover(function() {
+    $(this).addClass('show');
+    $(this).find('.dropdown-menu').addClass('show');
+  }, function() {
+    $(this).removeClass('show');
+    $(this).find('.dropdown-menu').removeClass('show');
+  });
+</script>
+
+<script>
+  function add_nav_white() {
+    $("nav").addClass("nav-white");
+    $('.logo').attr('src','/assets/img/svg/logo.svg');
+  }
+  function rm_nav_white() {
+    $("nav").removeClass("nav-white");
+    if ($(window).width() >= 992) {
+      $('.logo').attr('src','/assets/img/svg/logo_white.svg');
+    } else {
+      $('.logo').attr('src','/assets/img/svg/logo.svg');
+    }
+  }
+
+  $(document).ready(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+      add_nav_white();
+    }
+    else{
+      rm_nav_white();
+    }
+    console.log("pre");
+  })
+
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+      add_nav_white();
+    }
+    else{
+      rm_nav_white();
+    }
+  })
+</script>
