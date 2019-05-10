@@ -80,17 +80,19 @@ h2 {
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
 }
-h6 {
+h3 {
   font-weight: 400;
-  margin-bottom: .3em;  
 }
-
 h4 {
   font-weight: 400;
   padding: 0;
   margin: 0;
   margin-bottom: 2em;
   color: #565656;
+}
+h6 {
+  font-weight: 400;
+  margin-bottom: .3em;  
 }
 
 a {color: $flyoung_red;}
@@ -408,7 +410,6 @@ nav {
 .btn {
   font-family: 'Lato', 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
   text-transform: uppercase;
-  color: white;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 3px;
@@ -417,14 +418,24 @@ nav {
   display: inline-block;
   text-decoration: none;
   vertical-align: middle;
-  background-color: #d00000;
   transition: none;
   border-radius: 0%;
+  color: white;
+  background-color: #d00000;
 }
 .btn:hover {
   color: white;
+  opacity: 1; /* overwrite <a> property */
   background-color: #ba0000;
-  opacity: 1;
+}
+
+.btn-yellow {
+  color: black;
+  background-color: rgb(251, 188, 5);
+}
+.btn-yellow:hover {
+  color: black;
+  background-color: rgb(202, 152, 1);
 }
 
 .link-underline {

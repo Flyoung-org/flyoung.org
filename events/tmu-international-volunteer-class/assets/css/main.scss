@@ -38,17 +38,13 @@ body {
   padding-bottom: 48px;
 }
 
-.btn {
-  border-radius: 0;
-  font-size: .7em;
-}
-.btn:hover {
-  opacity: .8;
-}
-
 .dark {
   color: white;
   text-shadow: 0 2px 2px black;
+}
+
+.table {
+  font-size: 16px;
 }
 
 
@@ -90,14 +86,8 @@ body {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),url('{{ page.path }}/assets/img/join.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
-
   padding: 120px 0;
 
-  .btn {
-    color: black;
-    margin: 48px auto; 
-    background-color: rgb(251, 188, 5);
-  }
 }
 
 /*make the background-image cover the block responsively*/
