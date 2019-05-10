@@ -3,8 +3,12 @@ permalink: pretty
 collections:
   projects:
     output: true
-  journal:
+  cambodia_journal:
     output: true
+    permalink: /cambodia/journal/:name
+  eswatini_journal:
+    output: true
+    permalink: /eswatini/journal/:name
 
 defaults:
   - scope:
@@ -13,12 +17,21 @@ defaults:
     values:
       layout: "project"
   - scope:
-      path: "/journal/*"
+      path: "/cambodia/journal/*"
+    values:
+      layout: "red_block"
+  - scope:
+      path: "/eswatini/journal/*"
     values:
       layout: "red_block"
   - scope:
       path: ""
-      type: "journal"
+      type: "cambodia_journal"
+    values:
+      layout: "journal"
+  - scope:
+      path: ""
+      type: "eswatini_journal"
     values:
       layout: "journal"
   - scope:

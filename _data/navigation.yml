@@ -1,11 +1,11 @@
 - name: 關於我們
   link: /about/
 - name: 專案計畫
-  link: /projects/
+  link: #
   sublinks:
-    - name: 柬埔寨王國服務隊
+    - name: 柬埔寨王國服務隊 專案
       link: /cambodia/projects/
-    - name: 史瓦帝尼服務隊
+    - name: 史瓦帝尼服務隊 專案
       link: /eswatini/projects/
 - name: 飛洋課程
   link: /class/
@@ -17,5 +17,10 @@
   link: /donate/
 - name: 出隊日誌
   link: /journal/
+  sublinks:
+    - name: 柬埔寨王國服務隊 日誌
+      link: /cambodia/journal/
+    - name: 史瓦帝尼服務隊 日誌
+      link: /eswatini/journal/
 - name: 最新活動
   link: /events/

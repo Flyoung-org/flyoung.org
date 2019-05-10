@@ -75,6 +75,15 @@ footer {
   flex: 1; /*sticky footer*/
 }
 /* text-----------------*/
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 h2 {
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
@@ -83,6 +92,13 @@ h3 {
   font-weight: 400;
 }
 h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+
   font-weight: 400;
   padding: 0;
   margin: 0;

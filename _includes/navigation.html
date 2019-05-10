@@ -20,7 +20,7 @@
         {%- for item in site.data.navigation -%}
           {% if item.sublinks %}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="{{ item.link }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ item.name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -56,6 +56,7 @@
   function add_nav_white() {
     $("nav").addClass("nav-white");
     $('.logo').attr('src','/assets/img/svg/logo.svg');
+    console.log("add_nav_white")
   }
   function rm_nav_white() {
     $("nav").removeClass("nav-white");
@@ -64,26 +65,33 @@
     } else {
       $('.logo').attr('src','/assets/img/svg/logo.svg');
     }
+    console.log("rm_nav_white")
   }
 
-  $(document).ready(function(){
-    var scroll = $(window).scrollTop();
-    if (scroll > 0) {
+  document.addEventListener("DOMContentLoaded", function(){
+    if ($(".want-white-navbar").attr('data-want')==='yes') {
       add_nav_white();
+    } else {
+      $(document).ready(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+          add_nav_white();
+        }
+        else{
+          rm_nav_white();
+        }
+      });
+    
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+          add_nav_white();
+        }
+        else{
+          rm_nav_white();
+        }
+      });
     }
-    else{
-      rm_nav_white();
-    }
-    console.log("pre");
-  })
-
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if (scroll > 0) {
-      add_nav_white();
-    }
-    else{
-      rm_nav_white();
-    }
-  })
+  
+  });
 </script>
