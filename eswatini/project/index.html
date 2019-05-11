@@ -1,19 +1,22 @@
 ---
-title: Projects | 飛洋專案計畫
+title: 柬埔寨 ｜ 專案計畫
+title-tab: 柬埔寨 ｜ 專案計畫 - 飛洋
+layout: red_block
+projects:
+  - name: Train The Trainer (TTT) 計畫
+    link: /cambodia/project/train-the-trainer/
+    img: /assets/img/project/ttt.jpg
+  - name: 醫療包
+    link: /cambodia/project/med-kit/
+    img: /assets/img/project/med-kit.jpg
+  - name: 水質淨化計畫
+    link: /cambodia/project/water-purification/
+    img: /assets/img/project/water-purification.jpg
+  - name: 寄生蟲研究計畫
+    link: /cambodia/project/parasite/
+    img: /assets/img/project/parasite.jpg
 ---
 <!--  intro block -->
-<div class="vertical-middle top-block" id="intro">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="general-heading">
-          <h2 class="general-heading_header">專案計畫</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="vertical-middle">
   <div class="container">
 
@@ -37,42 +40,22 @@ title: Projects | 飛洋專案計畫
       </div>
     </div>
 
-    <div class="row justify-content-around" id="飛洋歷屆專案">
+    <div class="row justify-content-around" id="柬埔寨隊 歷屆專案">
       <div class="col-12 heading-indented">
         <h2 class="text heading-indented_header heading-indented_bar"><span>飛洋歷屆專案</span></h2>
       </div>
+
+      {% for project in page.projects %}
       <div class="col-9 col-sm-6 col-md-3">
         <div class="gallery">
-          <a href="/projects/train-the-trainer/">
-            <img src="/assets/img/projects/ttt.jpg" alt="Train The Trainer (TTT) 計畫">
-            <div class="desc vertical-middle horizontal-middle">Train The Trainer (TTT) 計畫</div>
+          <a href="{{ project.link }}">
+            <img src="{{ project.img }}" alt="{{ project.name }}">
+            <div class="desc vertical-middle horizontal-middle">{{ project.name }}</div>
           </a>
         </div>
       </div>
-      <div class="col-9 col-sm-6 col-md-3">
-        <div class="gallery">
-          <a href="/projects/parasite/">
-            <img src="/assets/img/projects/parasite.jpg" alt="寄生蟲研究計畫">
-            <div class="desc vertical-middle horizontal-middle">寄生蟲研究計畫</div>
-          </a>
-        </div>
-      </div>
-      <div class="col-9 col-sm-6 col-md-3">
-        <div class="gallery">
-          <a href="/projects/water-purification/">
-            <img src="/assets/img/projects/water-purification.jpg" alt="水質淨化計畫">
-            <div class="desc vertical-middle horizontal-middle">水質淨化計畫</div>
-          </a>
-        </div>
-      </div>
-      <div class="col-9 col-sm-6 col-md-3">
-        <div class="gallery">
-          <a href="/projects/med-kit/">
-            <img src="/assets/img/projects/med-kit.jpg" alt="醫療包">
-            <div class="desc vertical-middle horizontal-middle">醫療包</div>
-          </a>
-        </div>
-      </div>
+      {% endfor %}
+
     </div>
 
   </div>

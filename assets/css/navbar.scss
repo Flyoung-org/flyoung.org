@@ -1,5 +1,6 @@
 ---
 ---
+$flyoung_red: rgb(208, 0, 0);
 nav {
   background-color: transparent;
   transition: all 0.5s ease;
@@ -73,4 +74,8 @@ nav {
 
 .dropdown-menu {
   margin: 0;
+  a:active {
+    color: white;
+    background-color: $flyoung_red;
+  }
 }
