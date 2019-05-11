@@ -12,10 +12,13 @@ collections:
 
 defaults:
   - scope:
-      path: ""
-      type: "projects"
+      path: "/cambodia/project/*"
     values:
-      layout: "project"
+      layout: "red_block"
+  - scope:
+      path: "/eswatini/project/*"
+    values:
+      layout: "red_block"
   - scope:
       path: "/cambodia/journal/*"
     values:
