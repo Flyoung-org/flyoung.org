@@ -1,8 +1,6 @@
 permalink: pretty
 
 collections:
-  projects:
-    output: true
   cambodia_project:
     output: true
     permalink: /cambodia/project/:name
@@ -20,11 +18,8 @@ defaults:
     values:
       layout: "project"
   - scope:
-      path: "/cambodia/project/*"
-    values:
-      layout: "project"
-  - scope:
-      path: "/eswatini/project/*"
+      path: ""
+      type: "eswatini_project"
     values:
       layout: "project"
   - scope:
