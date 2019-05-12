@@ -3,13 +3,13 @@ permalink: pretty
 collections:
   cambodia_project:
     output: true
-    permalink: /cambodia/project/:name
+    permalink: /cambodia/project/:name/
   cambodia_journal:
     output: true
-    permalink: /cambodia/journal/:name
+    permalink: /cambodia/journal/:name/
   eswatini_journal:
     output: true
-    permalink: /eswatini/journal/:name
+    permalink: /eswatini/journal/:name/
 
 defaults:
   - scope:

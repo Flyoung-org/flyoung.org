@@ -2,19 +2,7 @@
 title: 柬埔寨 ｜ 專案計畫
 title-tab: 柬埔寨 ｜ 專案計畫 - 飛洋
 layout: red_block
-projects:
-  - name: Train The Trainer (TTT) 計畫
-    link: /cambodia/project/train-the-trainer/
-    img: /assets/img/project/ttt.jpg
-  - name: 醫療包
-    link: /cambodia/project/med-kit/
-    img: /assets/img/project/med-kit.jpg
-  - name: 水質淨化計畫
-    link: /cambodia/project/water-purification/
-    img: /assets/img/project/water-purification.jpg
-  - name: 寄生蟲研究計畫
-    link: /cambodia/project/parasite/
-    img: /assets/img/project/parasite.jpg
+img_path: /assets/img/project/
 ---
 <!--  intro block -->
 <div class="vertical-middle">
@@ -45,16 +33,17 @@ projects:
         <h2 class="text heading-indented_header heading-indented_bar"><span>柬埔寨隊 歷屆專案</span></h2>
       </div>
 
-      {% for project in page.projects %}
+      {% for project in site.cambodia_project %}
       <div class="col-9 col-sm-6 col-md-3">
         <div class="gallery">
-          <a href="{{ project.link }}">
-            <img src="{{ project.img }}" alt="{{ project.name }}">
-            <div class="desc vertical-middle horizontal-middle">{{ project.name }}</div>
+          <a href="{{ project.url }}">
+            <img src="{{ page.img_path }}{{ project.id | split: '/' | last }}.jpg" alt="{{ project.title }}">
+            <div class="desc vertical-middle horizontal-middle">{{ project.title }}</div>
           </a>
         </div>
       </div>
       {% endfor %}
+    
 
     </div>
 
