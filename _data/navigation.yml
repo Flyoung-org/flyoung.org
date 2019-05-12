@@ -1,12 +1,12 @@
 - name: 關於我們
   link: /about/
-- name: 專案計畫
+- name: 旗下團隊
   link: #
   sublinks:
-    - name: 柬埔寨王國服務隊 專案
-      link: /cambodia/project/
-    - name: 史瓦帝尼服務隊 專案
-      link: /eswatini/project/
+    - name: 柬埔寨王國服務隊
+      link: /cambodia/
+    - name: 史瓦帝尼服務隊
+      link: /eswatini/
 - name: 飛洋課程
   link: /class/
 - name: 加入我們
