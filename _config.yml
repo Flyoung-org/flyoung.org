@@ -19,12 +19,12 @@ defaults:
       path: ""
       type: "cambodia_project"
     values:
-      layout: "project"
+      layout: "cambodia_project"
   - scope:
       path: ""
       type: "eswatini_project"
     values:
-      layout: "project"
+      layout: "eswatini_project"
   - scope:
       path: "/cambodia/journal/*"
     values:
