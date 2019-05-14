@@ -7,6 +7,9 @@ collections:
   cambodia_journal:
     output: true
     permalink: /cambodia/journal/:name/
+  eswatini_project:
+    output: true
+    permalink: /eswatini/project/:name/  
   eswatini_journal:
     output: true
     permalink: /eswatini/journal/:name/
