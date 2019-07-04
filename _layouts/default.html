@@ -10,7 +10,11 @@
     <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    {% if page.name != "index.html" %}
+      <title>{{ page.name }}</title>
+    {% else %}
+      <title>{{ page.title }}</title>
+    {% endif %}
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
