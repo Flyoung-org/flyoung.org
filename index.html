@@ -1,5 +1,24 @@
 ---
 title: Flyoung-臺北醫學大學飛洋國際服務團(TMU FLYoung International Service)
+sponsors:
+  - 和信製造 Grand Union
+  - 財團法人歐巴尼紀念基金會
+  - 福順裕實業有限公司 王柏堯先生、徐之鳳女士
+  - 財團法人邱春木社會福利慈善事業基金會
+  - 台北府城隍廟
+  - 財團法人台北市臺灣省城隍廟
+  - 財團法人林伯奏文教基金會
+  - 財團法人成杏醫學文教基金會
+  - 奇美醫療財團法人奇美醫院
+  - 怡仁綜合醫院
+  - 財團法人創世社會福利基金會
+  - 海頓音樂工作室
+  - 臺北市明湖國民小學
+  - 臺北市私立再興小學
+  - 蜡藝蠟筆城堡
+  - 德恩奈股份有限公司
+  - CSD中國衛材
+  - 雙寶醫療器材有限公司
 ---
 <div class="parallax vertical-middle" style="background-image: url('/assets/img/index/20190304exhibit/Presentation1.jpg');">
   <div class="container">
@@ -9,7 +28,7 @@ title: Flyoung-臺北醫學大學飛洋國際服務團(TMU FLYoung International
           <h2 class="general-heading_header">飛洋靜態展</h2>
           <div class="general-heading_sub">
             <p>
-              <i class="fas fa-map-marker-alt"></i>醫綜後棟往B1階梯
+              9/23-9/25 跨領域一樓
             </p>
           </div>
           <p class="general-heading_line"></p>
@@ -89,7 +108,7 @@ title: Flyoung-臺北醫學大學飛洋國際服務團(TMU FLYoung International
         <div class="heading-indented_text dark">
           <p>想和我們一起做專案或拜訪當地嗎? 歡迎加入我們!</p>
         </div>
-        <a href="/apply/" class="btn">申請加入</a>
+        <a href="/apply/" class="btn">Join Us Now</a>
       </div>
       <div class="col-10 col-md-5 heading-indented">
         <h2 class="text heading-indented_header dark"><span>捐款支持</span></h2>
@@ -115,7 +134,9 @@ title: Flyoung-臺北醫學大學飛洋國際服務團(TMU FLYoung International
     </div>
 
     <div class="row">
-      <div class="col col-md-4">和信製造 Grand Union</div>
+      {% for sponsor in page.sponsors %}
+        <div class="col-6 col-md-4">{{ sponsor }}</div>
+      {% endfor %}
     </div>
   </div>
 </div>

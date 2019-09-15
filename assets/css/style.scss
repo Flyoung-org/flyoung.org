@@ -501,31 +501,6 @@ a:hover {
   background-color: #f3f3f3;
 }
 
-
-/* about -> cooperate */
-#cooperate {
-  background-color: #f3f3f3;
-  img {
-    height: 60px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  #cooperate {
-    img {
-     height: 100px; 
-    }
-  }
-}
-@media (min-width: 768px) {
-  #cooperate {
-    img {
-      height: 120px;
-    }
-  }
-}
-
-
 #ctep-mark {
   font-size: 45px;
   font-weight: 400;
@@ -553,7 +528,7 @@ a:hover {
  #sponsors {
    background-color: #f9f9f9;
 
-   font-size: 32px;
-   font-weight: 900;
+   font-size: 16px;
+   font-weight: 300;
    color: #6A6A6A;
  }
