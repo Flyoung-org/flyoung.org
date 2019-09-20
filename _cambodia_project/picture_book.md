@@ -1,6 +1,7 @@
 ---
 title: 繪本計畫
 ---
+![](/assets/img/project/cambodia/picture_book/picture_book1.jpg)
 ## 背景分析
 {:.text .heading-indented_header .heading-indented_bar}
 飛洋在柬服務已累積數年的經驗，一年前往兩次並持續進行著。幾次出隊下
@@ -11,7 +12,7 @@ title: 繪本計畫
 做能帶來的可觀影響力。
 
 &nbsp;
-
+![](/assets/img/project/cambodia/picture_book/picture_book2.jpg)
 ## 對象
 {:.text .heading-indented_header .heading-indented_bar}
 馬德望小學師生、馬德望Moung district共71所小學、暹粒偏鄉、暹粒Hannah’s hope育幼院
@@ -35,9 +36,16 @@ title: 繪本計畫
 
 第一次的繪本除了獲得當地的正回饋，也讓我們從中發現了一些問題並期望今年做出不一樣的改變。2018年暑假，我們事先將文字寫好再翻譯成柬文，到了當地卻發現語法、敬語等用法有不適當之處且易將台灣人視為理所當然的文化不經意置入其中，導致當地學生可能無法切身感受。
 
+![](/assets/img/project/cambodia/picture_book/picture_book4.png)
 &nbsp;
 
 ## 2019暑：反霸凌暴力繪本
 {:.text .heading-indented_header .heading-indented_bar}
 2019暑，我們決定將繪本獨立成一項專案，此期，繪本主題將訂為反霸凌與反暴力。根據柬埔寨政府報告2014 Cambodia Demographic and Health Survey(CDHS) 顯示，每五位婦女就有一位曾受暴力對待（15-49歲），尤其在窮困的地區有著較高的比率（15%）；在過去的偏鄉專案中，我們也常常看到UNICEF組織所發放的家暴相關海報；而在小學專案中，也不乏看見特定小孩遭群體霸凌的現象。種種證據皆指向暴力在柬國的嚴重性漸漸浮現。因此，飛洋今次的繪本決定以霸凌、暴力等議題為主題，期望藉由大家都喜愛的繪本，喚醒大眾對於暴力問題的重視。
+
+![](/assets/img/project/cambodia/picture_book/picture_book5.png)
+&nbsp;
+
+![](/assets/img/project/cambodia/picture_book/picture_book3.jpg)
+
 &nbsp;
