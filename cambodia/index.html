@@ -2,27 +2,31 @@
 title: 柬埔寨王國服務隊 
 title-tab: 柬埔寨 - 飛洋
 layout: red_block
-img_path: /assets/img/project/
+img_path: /assets/img/project/cambodia/
 ---
+<link rel="stylesheet" href="/assets/css/iframe.css">
 <!--  intro block -->
 <div class="vertical-middle">
   <div id='專案'>
     <div class="container">
+      <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/L-8XK0yEF-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="overflow:hidden;height:100%;width:100%"></iframe>
+      </div>
       <div class="row" id="專案理念">
         <div class="col heading-indented">
           <h2 class="text heading-indented_header heading-indented_bar"><span>專案理念: 永續發展目標（SDGs）</span></h2>
-          <h3>隨著2000 年世界189 國所共同制定的8 項「千禧年發展目標（Millennium Development Goals, MDGs）」於預計的 2015 年計畫終止後。聯合國發展計畫署(United Nations Development Programme, UNDP)有感於過去各國所達成的各項成果仍可有繼續進步的潛力，故於 2015 年 9 月的聯合國會議中，以延續過去的 8 項千禧年發展目標成果為奠基，正式訂定未來 15 年的永續發展目標（Sustainable Development Goals, SDGs），包含了 17項目標（Goals）及 169 項細項目標（Targets）。</h3>
-          <h3>飛洋國際服務團身於全球志工服務圈的一員，於過去幾年來，皆致力於朝向 SDGs 所包含的第三項(Good Health And Well-Being, 健康與福祉)、第四項(Quality Education, 教育品質)和第六項(Clean Water and Sanitation)三大目標為專案制定主軸，期望能在未來 2030 年計畫終止前， 共同為世界服務發展努力。以下便簡介 SDGs 與今年專案計畫之呼應項目：</h3>
+          <p>隨著2000 年世界189 國所共同制定的8 項「千禧年發展目標（Millennium Development Goals, MDGs）」於預計的 2015 年計畫終止後。聯合國發展計畫署(United Nations Development Programme, UNDP)有感於過去各國所達成的各項成果仍可有繼續進步的潛力，故於 2015 年 9 月的聯合國會議中，以延續過去的 8 項千禧年發展目標成果為奠基，正式訂定未來 15 年的永續發展目標（Sustainable Development Goals, SDGs），包含了 17項目標（Goals）及 169 項細項目標（Targets）。</p>
+          <p>飛洋國際服務團身於全球志工服務圈的一員，於過去幾年來，皆致力於朝向 SDGs 所包含的第三項(Good Health And Well-Being, 健康與福祉)、第四項(Quality Education, 教育品質)和第六項(Clean Water and Sanitation)三大目標為專案制定主軸，期望能在未來 2030 年計畫終止前， 共同為世界服務發展努力。以下便簡介 SDGs 與今年專案計畫之呼應項目：</p>&nbsp;
           <p>
-            <h3>1.	GOAL  3,  Good  Health  And  Well-Being,  健康與福祉</h3>
+            <h3>GOAL  3,  Good  Health  And  Well-Being,  健康與福祉</h3>&nbsp;
             我們嘗試執行以各級學校、健康中心為委託單位發放簡易醫療包至各家戶，預期柬埔寨民眾在受傷的第一時間，並能及時得到最簡易的醫療照護， 自行為傷口消毒、包紮，降低因感染而造成惡化的風險。
-          </p>
+          </p>&nbsp;
           <p>
-            <h3>2.	GOAL  4,  Quality  Education,  教育品質</h3>
+            <h3>GOAL  4,  Quality  Education,  教育品質</h3>&nbsp;
             自柬埔寨服務隊創隊以來，Train The Trainer (TTT)便是我們主力的專案之一。與負責當地種子教師培訓的 CTEP 組織合作下，我們將本身的醫學專長，以 PPT、預錄 YOUTUBE 影片、實地示範演練等三種方式，於 2 日的工作營中教授給當地種子教師，並於隔日要求種子教師實際教學，以檢驗其學習成效。每次工作營結束後也將有回饋機制，一方面是聽取教師對於我們教學的回饋，另一方面也從他們的回應修改下次的教學內容。
-          </p>
+          </p>&nbsp;
           <p>
-            <h3>3.	GOAL  6,  Clean  Water  and  Sanitation,  潔淨水源與衛生促進</h3>
+            <h3>GOAL  6,  Clean  Water  and  Sanitation,  潔淨水源與衛生促進</h3>&nbsp;
             我們將與柬埔寨當地協助興建水源過濾器的 NGO 合作，期在村莊與學校搭建過濾器，並教導當地民眾如何維護使用，提供更乾淨衛生的水源。
           </p>
         </div>
@@ -34,7 +38,7 @@ img_path: /assets/img/project/
         </div>
 
         {% for project in site.cambodia_project %}
-        <div class="col-9 col-sm-6 col-md-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="gallery">
             <a href="{{ project.url }}">
               <img src="{{ page.img_path }}{{ project.id | split: '/' | last }}.jpg" alt="{{ project.title }}">

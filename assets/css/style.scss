@@ -122,7 +122,7 @@ a:hover {
 
 .dark {
   color: white;
-  text-shadow: 0 2px 2px black;
+  text-shadow: 0 3px 16px #000000b3;
 }
 
 .logo-sm {
@@ -306,6 +306,7 @@ a:hover {
   background-color: #d00000;
   background-clip: content-box; /*background a div without the padding area*/
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
   a {
     display: block;
     height: 100%;
@@ -501,31 +502,6 @@ a:hover {
   background-color: #f3f3f3;
 }
 
-
-/* about -> cooperate */
-#cooperate {
-  background-color: #f3f3f3;
-  img {
-    height: 60px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  #cooperate {
-    img {
-     height: 100px; 
-    }
-  }
-}
-@media (min-width: 768px) {
-  #cooperate {
-    img {
-      height: 120px;
-    }
-  }
-}
-
-
 #ctep-mark {
   font-size: 45px;
   font-weight: 400;
@@ -553,7 +529,7 @@ a:hover {
  #sponsors {
    background-color: #f9f9f9;
 
-   font-size: 32px;
-   font-weight: 900;
+   font-size: 16px;
+   font-weight: 300;
    color: #6A6A6A;
  }

@@ -53,9 +53,11 @@
 </script>
 
 <script>
+  var nav_white = true;
   function add_nav_white() {
     $("nav").addClass("nav-white");
     $('.logo').attr('src','/assets/img/svg/logo.svg');
+    nav_white = true;
     console.log("add_nav_white")
   }
   function rm_nav_white() {
@@ -65,6 +67,7 @@
     } else {
       $('.logo').attr('src','/assets/img/svg/logo.svg');
     }
+    nav_white=false;
     console.log("rm_nav_white")
   }
 
@@ -73,8 +76,8 @@
       add_nav_white();
     } else {
       $(document).ready(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 0) {
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 0) {
           add_nav_white();
         }
         else{
@@ -83,11 +86,12 @@
       });
     
       $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 0) {
+        var scrolled = $(window).scrollTop();
+
+        if (scrolled > 0 && nav_white===false) {
           add_nav_white();
         }
-        else{
+        else if (scrolled===0 && nav_white===true) {
           rm_nav_white();
         }
       });

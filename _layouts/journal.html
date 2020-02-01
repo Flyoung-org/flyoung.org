@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="assets/css/prev_next.css">
 <div class="want-white-navbar" data-want="yes"></div>
 <div class="journal">
   <div class="container">
     <div class="row">
       <div class="col">
         <h2>Day {{ page.day }}</h2>
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.name }}</h1>
         <h4>
           {{ page.date | date: "%Y/%m/%d" }}<br>
           撰/ {{ page.author }}
@@ -17,6 +18,14 @@ layout: default
           {{ content }}
         </div>
       </div>
+    </div>
+    <div class="col">
+      {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.name}}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">{{page.next.name}} &raquo;</a>
+      {% endif %}
     </div>
   </div>
 </div>
